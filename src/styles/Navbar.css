@@ -1,0 +1,140 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: linear-gradient(135deg, #E6E6FA, #F5F5DC, #F0E68C); /* Soft Lavender, Beige, Light Gold */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Subtle shadow for depth */
+    color: #333; /* Dark gray text */
+    font-family: 'Georgia', serif; /* Matching font */
+    padding: 0 3rem; /* Padding for spacious layout */
+}
+.nav-title {
+    display: flex;
+    align-items: center;  
+    gap: 20px;  /* Adjust this value for more space */
+    font-family: 'Merriweather', serif;
+    font-size: 1.9rem;
+    color: #32312b;
+    cursor: pointer;
+    padding-left: 3vw;
+    white-space: nowrap;  
+}
+
+.nav-logo {
+    width: 100px;  /* Adjust size as needed */
+    height: auto;
+    animation: none !important;  /* Stops any animations */
+    transition: none !important;
+    align-items: flex-start; /* Stops any hover effects */
+}
+
+
+.Navbar h3{
+    padding-left: 4vw;
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem;
+    color:#0a0520;
+    cursor: pointer;
+
+}
+
+.Navbar .nav-options{
+
+    display: flex;
+    align-items: center;
+    padding-right: 3vw;
+    gap: 30px;
+}
+
+.Navbar ul{
+    display: flex;
+    gap: 30px;
+}
+
+.Navbar a{
+    text-decoration: none;
+}
+.Navbar ul li{
+    list-style: none;
+    cursor: pointer;
+    color: #807e7e;
+}
+
+.Navbar ul li:hover{
+    color: #000;
+}
+
+.Navbar ul Link{
+    list-style: none;
+    cursor: pointer;
+    color: #807e7e;
+}
+
+.Navbar ul Link:hover{
+    color: #000;
+}
+.nav-search-icon {
+    color: white; /* Adjust color as needed */
+    font-size: 1.5rem; /* Adjust size if needed */
+}
+
+.nav-search input {
+    background: transparent;  /* Makes the input box transparent */
+    border: 0.5px solid rgba(255, 255, 255, 0.5); /* Optional: Adds a light border */
+    border-radius:4px;
+    color: rgb(24, 22, 22);  /* Ensures text is visible */
+    padding: 3px;
+
+    font-size: 1rem;
+    outline: none;
+    border-radius: 3px;
+    height: 12px;
+    width:300px; /* Adjust width if needed */
+}
+
+.nav-search input::placeholder {
+    color: rgba(58, 58, 58, 0.7); /* Makes placeholder text semi-transparent */
+}
+
+
+.nav-search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #3f3f3faf;
+    height: 64px;
+    padding: 3px;
+    border-radius: 2rem;
+}
+
+.nav-search span{
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-search-icon{
+    color: #807e7e;
+    padding-left: 5px;
+}
+
+.nav-search span input{
+    border: none;
+}
+
+.nav-search span input:focus{
+    outline: none;
+}
+
+.nav-search button{
+    border-radius: 2rem;
+    padding: 0 10px;
+    border: none;
+    background-color: rgb(102, 110, 102);
+    color: aliceblue;
+    height: 4vh;
+    cursor: pointer;
+}

@@ -1,0 +1,124 @@
+.hero-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.hero-text{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    padding-left: 4vw;
+}
+
+.hero-text .hero-line{
+    height: 3px;
+    width: 10vw;
+    background-color: rgb(35, 209, 35);;
+
+}
+
+.hero-text h1{
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero-text p{
+    margin: 0;
+}
+
+.hero-text button {
+    width: 15vw;
+    height: 8vh;
+    background: linear-gradient(90deg, #FFB8D1, #E4B4C2, #E7CEE3, #E0E1E9, #DDFDFE);
+    border: none;
+    background-size: 200% 120%;
+    background-position: 100% 0;
+    transition: background-position 0.5s ease-in-out, color 0.4s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 50px;  /* Smooth pill-shaped button */
+    border: 0.5px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;  /* Dark text for contrast */
+    margin-top: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Cool Hover Effect */
+.hero-text button:hover {
+    background-position: 0 0;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Animated Glowing Border */
+.hero-text button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, rgba(255, 184, 209, 0.5), rgba(228, 180, 194, 0.5), rgba(231, 206, 227, 0.5));
+    z-index: -1;
+    border-radius: 50px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.hero-text button:hover::before {
+    opacity: 1;
+}
+
+/* Click Effect */
+.hero-text button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-images{
+
+    display: flex;
+    width: 100%;
+    gap: 5vh;
+    justify-content: center;
+}
+
+.hero-images .span1{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-top: 5vh;
+}
+
+.hero-images .span2{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-top: 15vh;
+}
+
+.hero-images img{
+    width: 20vw;
+    border-radius: 0.7rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hero-images img:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}

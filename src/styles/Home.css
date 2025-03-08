@@ -1,0 +1,6 @@
+.homepage {
+    padding-top: 12vh;
+    background: linear-gradient(135deg, #E6E6FA, #F5F5DC, #F0E68C); /* Lavender, Beige, Light Gold */
+    color: #333; /* Dark gray text for better readability */
+    font-family: 'Georgia', serif; /* Elegant serif font for a timeless look */
+}
